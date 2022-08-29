@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+/* 最上方的tab栏 */
+/****
+ *** */
+#header {
+	width: 100%;
+	min-width: 1200px;
+	height: 120px;
+	z-index: 999;
+	position: fixed;
+	background-color: #ffffff;
+
+}
+
+.emptyBox {
+	width: 100%;
+	min-width: 1200px;
+	height: 120px;
+	background-color: #ffffff;
+}
+
+.header {
+	min-width: 1200px;
+	height: 120px;
+
+}
+
+.header-box {
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.header-box-left {
+	width: 20%;
+	height: 100%;
+}
+
+.logo {
+	width: 100%;
+	height: 75%;
+}
+
+.logo>img {
+	height: 100%;
+}
+
+.introduce {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	letter-spacing: 8px;
+
+}
+
+#tabList {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tabList {
+	width: 80%;
+	height: 100%;
+	color: #4c4c4c;
+	font-family: Microsoft Yahei;
+
+}
+
+.tabList-box {
+	width: 100%;
+	height: 80%;
+	margin-top: 30px;
+	display: flex;
+	margin-left: 30px;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.tabList a {
+	color: #4c4c4c;
+}
+
+.tabList img {
+	margin: 0 0 0 5px;
+	width: 15px;
+}
+
+.phoneNumber {
+	color: #4c4c4c;
+	font-family: Microsoft Yahei;
+}
+
+/* 每个部分外的大盒子 */
+.bigTittleBox {
+	width: 100%;
+	display: flex;
+	min-width: 1200px;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 50px;
+}
+
+.filmCaseList {
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	margin-left: -250px;
+	margin-top: 90px;
+	display: none;
+}
+.empty{
+	width: 100%;
+	height: 30px;
+}
+.filmCaseList-child {
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #1e50be;
+	align-items: center;
+	color: white;
+
+}
+.filmCaseList-child:hover {
+	background-color: #1e50ae;
+}

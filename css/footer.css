@@ -1,0 +1,114 @@
+.homePageFooter {
+    width: 100%;
+    min-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+}
+.homePageFooter-top {
+    width: 1200px;
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.homePageFooter-top-left img {
+    width: 126px;
+    height: 127px;
+    margin: 0 0 8px 0;
+}
+
+.homePageFooter-top-left,
+.homePageFooter-top-center {
+    color: white;
+}
+
+.homePageFooter-top-left,
+.homePageFooter-top-center,
+.homePageFooter-top-right {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.homePageFooter-top-left {
+    align-items: center;
+}
+
+.homePageFooter-top-center {
+    width: 458px;
+    justify-content: space-between;
+    margin-left: 160px;
+    font-family: Microsoft Yahei;
+}
+
+.companyName {
+    font-size: 18px;
+}
+
+.projectManagerPhoneNum {
+    display: flex;
+    justify-content: center;
+}
+
+.homePageFooter-top-right {
+    font-size: 14px;
+    margin-left: 80px;
+}
+
+.movieShow {
+    color: white;
+}
+
+.homePageFooter-top-right-content {
+    display: flex;
+    justify-content: center;
+}
+
+.homePageFooter-top-right-content a {
+    color: #979797;
+    margin-top: 15px;
+}
+
+.homePageFooter-top-right-content-left,
+.homePageFooter-top-right-content-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.homePageFooter-top-right-content-right {
+    margin-left: 20px;
+}
+
+.homePageFooter-bottom {
+    width: 100%;
+    margin-top: 30px;
+    height: 80px;
+    background-color: #121212;
+}
+
+.homePageFooter-bottom-child {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.homePageFooter-bottom-child-top,
+.homePageFooter-bottom-child-bottom {
+    text-align: center;
+    font-size: 14px;
+}
+
+.homePageFooter-bottom-child-top {
+    margin-top: 15px;
+    color: rgba(57, 57, 57, 1);
+}
+
+.homePageFooter-bottom-child-bottom{
+    margin-top: 10px;
+    color: #8b919d;
+    font-family: Microsoft Yahei;
+}

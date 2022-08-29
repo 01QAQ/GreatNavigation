@@ -1,0 +1,211 @@
+/*****
+****
+这是第五个页面大航海介绍的css
+*/
+.bigTittleBox-introduce {
+    width: 1200px;
+    display: flex;
+    margin-top: 120px;
+	opacity: 0.3;
+	transition: 1s;
+    justify-content: space-between;
+}
+
+.bigTittleBox-introduce-left,
+.bigTittleBox-introduce-right {
+    width: 515px;
+    font-family: Microsoft Yahei;
+}
+
+.Company-name {
+    font-size: 24px;
+    color: black;
+}
+
+.Company-English {
+    font-size: 15px;
+    color: #A9A9A9;
+    margin: 15px 0 15px 0;
+}
+
+.Company-content {
+    font-size: 16px;
+    color: #4b4b4b;
+    line-height: 32px;
+}
+
+.bigTittleBox-introduce-right {
+    margin-top: 30px;
+}
+
+.bigTittleBox-introduce-right-content {
+    font-size: 16px;
+    color: #4b4b4b;
+    line-height: 25px;
+}
+
+.fiveQuestion {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.fiveQuestion-tittle {
+    width: 390px;
+    height: 100px;
+    margin: 0 auto;
+    font-family: Microsoft Yahei;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fiveQuestion-tittle-text {
+    font-size: 36px;
+    color: #000000;
+}
+
+.fiveQuestion-tittle-text span {
+    font-size: 60px;
+    color: #1f87e8;
+}
+
+.fiveQuestion-tittle-img img {
+    width: 339px;
+    height: 15px;
+}
+
+.fiveQuestion-content {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Microsoft Yahei;
+}
+
+.fiveQuestion-content-tittle {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+}
+
+.fiveQuestion-content-tittle-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: #1f87e8;
+    font-size: 26px;
+    border: 3px solid #1f87e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fiveQuestion-content-tittle span {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.fiveQuestion-content-answer {
+    width: 100%;
+    width: 1066px;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #4b4b4b;
+}
+
+.fiveQuestion-content-answer span {
+    color: #1f87e8;
+    font-weight: bold;
+}
+
+.fiveQuestion-content-img {
+    margin-top: 30px;
+}
+
+.fiveQuestion-content-pictureBox {
+    width: 1000px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.bg {
+    width: 230px;
+    height: 300px;
+}
+
+.frame {
+    width: 188px;
+    height: 98px;
+    margin-left: -210px;
+    margin-top: 180px;
+    position: absolute;
+}
+
+.fiveQuestion-content-pictureBox-child span,
+.culturalConcept-imgBox span {
+    width: 140px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -105px;
+    margin-left: 43px;
+    font-weight: bold;
+    border-bottom: 0.5px solid #c8c9c3;
+}
+
+/*文化理念*/
+.culturalConcept {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.culturalConcept-top {
+    color: #dedede;
+    font-size: 36px;
+}
+
+.fiveQuestion-little {
+    color: #777777;
+    font-size: 14px;
+    font-family: Microsoft Yahei;
+}
+
+.fiveQuestion-imgBox {
+    width: 1000px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.culturalConcept-imgBox {
+    width: 1000px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.culturalConcept-imgBox-child {
+    width: 250px;
+    margin-top: 30px;
+}
+
+.culturalConcept-imgBox span {
+    color: #2097f3;
+    margin-top: -110px;
+}
+
+.span-bottom {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: -65px;
+
+}

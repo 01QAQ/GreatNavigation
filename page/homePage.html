@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 这是第一个首页页面 -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>大航海影像</title>
+	<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<link rel="stylesheet" href="../css/homePage.css">
+	<!-- 头部 -->
+	<link rel="stylesheet" href="../css/header.css">
+	<script src="../js/tabList.js"></script>
+	<!-- footer.css -->
+	<link rel="stylesheet" href="../css/footer.css">
+	<!-- banner -->
+	<link rel="stylesheet" href="../css/banner.css">
+	<!-- jquery插件 -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- swiper走马灯效果 -->
+	<link rel="stylesheet" type="text/css" href="../css/swiper.css" />
+	<script src="https://cdn.bootcdn.net/ajax/libs/Swiper/5.3.8/js/swiper.min.js" type="text/javascript"
+		charset="utf-8"></script>
+	<link rel="stylesheet" href="../css/trottingHorseLamp.css">
+	<!-- 分页 -->
+	<link rel="stylesheet" href="../css/paging.css">
+</head>
+
+<body>
+	<!-- 最上边的tab栏 -->
+	<div id="header">
+		<div class="header-box">
+			<!-- 左边的logo -->
+			<div class="header-box-left">
+				<div class="logo"><img src="../static/logo.png" alt="" srcset=""></div>
+				<div class="introduce">打造企业营销视觉盛宴</div>
+			</div>
+			<!-- 右边的菜单栏 -->
+			<div class="tabList">
+				<div class="tabList-box">
+					<div class="homePage"><a href="http://l010118.3vfree.cn/GreatNavigation/page/homePage.html">首页</a></div>
+					<div class="filmCase tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/flimCase.html">影片案例<img src="../static/turndown.png" alt=""></a></div>
+					<div class="serviceQuotation tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/ServiceQuotation.html">服务报价</a></div>
+					<div class="consultingTrends tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/ConsultingTrends.html">咨询动态</a></div>
+					<div class="greatNavigation tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/GreatNavigation.html">大航海介绍</a></div>
+					<div class="contacUs tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/contactUs.html">联系我们</a></div>
+					<div class="phoneNumber" style="font-size: 12px;">TEL 400-1088-755</div>
+				</div>
+			</div>
+			<div class="filmCaseList">
+				<div class="empty">
+
+				</div>
+				<a href="#">
+					<div class="filmCaseList-child">
+						企业宣传片
+					</div>
+				</a>
+				<a href="#">
+					<div class="filmCaseList-child">
+						产品视频
+					</div>
+				</a>
+				<a href="#">
+					<div class="filmCaseList-child">
+						三维动画
+					</div>
+				</a>
+				<a href="#">
+					<div class="filmCaseList-child">
+						地产动画
+					</div>
+				</a>
+				<a href="#">
+					<div class="filmCaseList-child">
+						Flash动画
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 一个空盒子 避免tab栏遮掩 -->
+	<div class="emptyBox"></div>
+	<!-- tab栏之下 banner -->
+	<div class="banner">
+		<!-- <div class="header"></div> -->
+		<div class="bannerImg"><img src="../static/homePageBanner.png" alt="" srcset=""></div>
+	</div>
+	<!-- 这是第一栏服务项目 -->
+	<div class="tittleBox">
+		<div class="tittle">
+			<!-- 大标题 -->
+			<span class="textBg">
+				SERVICE ITEMS
+			</span>
+			<h1>服务项目</h1>
+			<span class="color">视频营销领域的顶尖团队，影像宣传品牌领军企业，视觉精彩呈现的创新者！</span>
+			<div class="serviceVidio">
+				<div class="vidioBox1 vidioBoxHome">
+					<div class="picture">
+						<img src="../static/film.png" alt="">
+						<h5>企业宣传片</h5>
+					</div>
+				</div>
+				<div class="vidioBox2 vidioBoxHome">
+					<div class="picture">
+						<img src="../static/Product video.png" alt="">
+						<h5>企业宣传片</h5>
+					</div>
+				</div>
+				<div class="vidioBox3 vidioBoxHome">
+					<div class="picture">
+						<img src="../static/animation.png" alt="">
+						<h5>企业宣传片</h5>
+					</div>
+				</div>
+				<div class="vidioBox4 vidioBoxHome">
+					<div class="picture">
+						<img src="../static/build animation.png" alt="">
+						<h5>企业宣传片</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 这是第二栏案例欣赏 -->
+	<div class="tittleBox" id="two">
+		<div class="tittle">
+			<span class="textBg">
+				CASE STUDY
+			</span>
+			<h1>案例欣赏</h1>
+			<span class="color">十多年沉淀，近千部影视作品，服务单位超200家，其中上市企业十余家</span>
+			<div class="movieBox">
+				<div class="movie">
+					<div class="movieSer">
+						<div class="movieImg" id="vidio1">
+							<div class="show">
+								<img src="../static/右三角形.png" alt="">
+							</div>
+						</div>
+						<h3>制造业企业宣传片</h3>
+					</div>
+					<div class="movieSer">
+						<div class="movieImg" id="vidio1">
+							<div class="show">
+								<img src="../static/右三角形.png" alt="">
+							</div>
+						</div>
+						<h3>制造业企业宣传片</h3>
+					</div>
+					<div class="movieSer">
+						<div class="movieImg" id="vidio1">
+							<div class="show">
+								<img src="../static/右三角形.png" alt="">
+							</div>
+						</div>
+						<h3>制造业企业宣传片</h3>
+					</div>
+				</div>
+				<div class="movie">
+					<div class="movieSer">
+						<div class="movieImg" id="vidio1">
+							<div class="show">
+								<img src="../static/右三角形.png" alt="">
+							</div>
+						</div>
+						<h3>制造业企业宣传片</h3>
+					</div>
+					<div class="movieSer">
+						<div class="movieImg" id="vidio1">
+							<div class="show">
+								<img src="../static/右三角形.png" alt="">
+							</div>
+						</div>
+						<h3>制造业企业宣传片</h3>
+					</div>
+					<div class="movieSer">
+						<div class="movieImg" id="vidio1">
+							<div class="show">
+								<img src="../static/右三角形.png" alt="">
+							</div>
+						</div>
+						<h3>制造业企业宣传片</h3>
+					</div>
+				</div>
+				<div class="movie">
+					<div class="movieSer">
+						<div class="movieImg" id="vidio1">
+							<div class="show">
+								<img src="../static/右三角形.png" alt="">
+							</div>
+						</div>
+						<h3>制造业企业宣传片</h3>
+					</div>
+					<div class="movieSer">
+						<div class="movieImg" id="vidio1">
+							<div class="show">
+								<img src="../static/右三角形.png" alt="">
+							</div>
+						</div>
+						<h3>制造业企业宣传片</h3>
+					</div>
+					<div class="movieSer">
+						<div class="movieImg" id="vidio1">
+							<div class="show">
+								<img src="../static/右三角形.png" alt="">
+							</div>
+						</div>
+						<h3>制造业企业宣传片</h3>
+					</div>
+				</div>
+			</div>
+			<div class="readMore">点击查看更多</div>
+		</div>
+	</div>
+	<!-- 这是第三栏服务优势 -->
+	<div class="tittleBox">
+		<div class="tittle">
+			<span class="textBg">
+				ADVANTAGE
+			</span>
+			<h1>服务优势</h1>
+			<span class="color">视频营销五大优势.锁定大航海，打造企业营销视觉盛宴</span>
+			<div class="fiveAdvantage">
+				<div class="fiveAdvantage-first">
+					<div class="ball" id="ball1"></div>
+					<div class="qualityAssurance">
+						<span>1.质量保障</span>
+						<div class="qualityAssuranceContent">
+							自有导演、策划、摄像、后期等成<br>&ensp;&ensp;&ensp;&ensp;熟稳定团队，高标准要求,确<br>保项目质量！</div>
+					</div>
+				</div>
+				<div class="fiveAdvantage-second">
+					<div class="ball" id="ball2"></div>
+					<div class="qualityAssurance">
+						<span>2.高性价比</span>
+						<div class="qualityAssuranceContent">&ensp;&ensp;工业化的影片制作流程，超高性<br>价比影片，让客户的每一分钱物超所值</div>
+					</div>
+				</div>
+				<div class="fiveAdvantage-third">
+					<div class="qualityAssurance">
+						<span>3.高效协作</span>
+						<div class="qualityAssuranceContent">
+							&ensp;&ensp;&ensp;&ensp;公司实行项目责任制，导演既是<br>&ensp;&ensp;项目经理，全程负责与客户沟通，<br>去除中间环节确保沟通高效执行！
+						</div>
+					</div>
+					<div class="ball" id="ball3"></div>
+				</div>
+				<div class="fiveAdvantage-forth">
+					<div class="qualityAssurance">
+						<span>4.专注营销</span>
+						<div class="qualityAssuranceContent">
+							公司创意团队拥有经验丰富的品牌推<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;广经验，市场策划+视觉传达，<br>
+							&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;让视频赋予营销的灵魂！</div>
+					</div>
+					<div class="ball" id="ball4"></div>
+				</div>
+				<div class="fiveAdvantage-fiveth">
+					<div class="qualityAssurance">
+						<span>5.服务至上</span>
+						<div class="qualityAssuranceContent"> 满意度调查与制作人员薪酬挂钩<br>为期一年质保服务,售后无忧！</div>
+					</div>
+					<div class="ball" id="ball5"></div>
+				</div>
+				<div class="dashedBall">
+					<img src="../static/cameraLens.PNG" alt="">
+				</div>
+			</div>
+			<!-- 这是八个流程 -->
+			<div class="cooperation">
+				<div class="cooperation-tittle">COOPERATION PROCESS</div>
+				<div class="cooperation-tittle-text">合作流程</div>
+				<div class="cooperation-image-text">
+					<img src="../static/hu.png" alt="" srcset="">
+					<div class="one">
+						<div class="tittleText">前期沟通</div>
+						<div class="contentText">了解客户需求，结合专业给<br>予客户影片建议</div>
+					</div>
+					<div class="two">
+						<div class="tittleText">项目方案</div>
+						<div class="contentText">提交初步项目方案</div>
+					</div>
+					<div class="three">
+						<div class="tittleText">签订合作</div>
+						<div class="contentText">确定方案并签订合作协议</div>
+					</div>
+					<div class="four">
+						<div class="tittleText">分镜脚本</div>
+						<div class="contentText">根据项目方案，制作执行<br>脚本，并双方确定</div>
+					</div>
+					<div class="five">
+						<div class="tittleText">影片拍摄</div>
+						<div class="contentText">
+							确认拍摄日期、道具、场<br>地、演员等，根据脚本摄制<br>组执行拍摄</div>
+					</div>
+					<div class="six">
+						<div class="tittleText">后期制作</div>
+						<div class="contentText">根据影片脚本进行特效、包<br>装、剪辑</div>
+					</div>
+					<div class="seven">
+						<div class="tittleText">交付样片</div>
+						<div class="contentText">提交审核样片</div>
+					</div>
+					<div class="eight">
+						<div class="tittleText">交付成片</div>
+						<div class="contentText">客户审核样片确认后，交付<br>最终成片</div>
+					</div>
+				</div>
+			</div>
+			<div class="equipment">
+				<div class="equipmentBox">
+					<!-- 这是第一行 -->
+					<div class="equipmentBox-top">
+						<div class="equipmenBox-top-left">
+							<img src="../static/photo.png" alt="">
+						</div>
+						<div class="equipmentBox-top-right">
+							<div class="equipment-top-right-tittle">
+								电影级影视设备
+							</div>
+
+							<div class="equipment-top-right-content">
+								大航海影像每年持续投入，拥有Arri、Sony、<br>GH5、无人机等在内的大量超清影视级器材，斯坦<br>尼康、KINO-FLO灯具组、进口轨道等配套设备，<br>数十台剪辑设备，百T级客户视频素材库、好莱坞<br>影视级别达芬奇调色系统，为客户提供专业服务。
+							</div>
+						</div>
+					</div>
+					<!-- 这是第二行照片 -->
+					<div class="equipmentBox-center">
+						<div class="equipmentBox-center-left">
+							<img src="../static/photo2.png" alt="">
+						</div>
+						<div class="equipmentBox-center-center">
+							<img src="../static/photo3.png" alt="">
+						</div>
+						<div class="equipmentBox-center-right">
+							<img src="../static/photo4.png" alt="">
+						</div>
+					</div>
+					<!-- 这是最下边一行照片 -->
+					<div class="equipmentBox-bottom">
+						<div class="equipmentBox-bottom-one">
+							<img src="../static/photo5.png" alt="">
+						</div>
+						<div class="equipmentBox-bottom-two">
+							<img src="../static/photo7.png" alt="">
+						</div>
+						<div class="equipmentBox-bottom-three">
+							<img src="../static/photo8.png" alt="">
+						</div>
+						<div class="equipmentBox-bottom-four">
+							<img src="../static/photo9.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 这是第四栏公司动态 -->
+	<div class="tittleBox">
+		<div class="tittle">
+			<span class="textBg">
+				DYNAMIC
+			</span>
+			<h1>公司动态</h1>
+			<span class="color">我们不断探索新的可能，突破限制，敢于想象，结合创意与数字科技，帮助客户实现**价值</span>
+			<div class="dynamic-movieBox">
+				<div class="dynamic-movieBox-left">
+					<a href="#">
+						<div class="dynamic-movieBox-left-movie"></div>
+					</a>
+					<a href="#">
+						<div class="dynamic-movieBox-tittle">
+							西图雅宣传片拍摄花絮
+						</div>
+					</a>
+					<div class="dynamic-movieBox-content">
+						西图雅宣传片拍摄，采用双机位，双摄制组分工拍摄，在通过两天的努力圆满完成...
+					</div>
+				</div>
+				<div class="dynamic-movieBox-center">
+					<a href="#">
+						<div class="dynamic-movieBox-center-movie"></div>
+					</a>
+					<a href="#">
+						<div class="dynamic-movieBox-tittle">
+							数字科技，呈现未来生活
+						</div>
+					</a>
+					<div class="dynamic-movieBox-content">
+						未来管家智能机器人，影片制作完成，用三维动画演绎未来生活！
+					</div>
+				</div>
+				<div class="dynamic-movieBox-right">
+					<a href="#">
+						<div class="dynamic-movieBox-right-movie"></div>
+					</a>
+					<a href="#">
+						<div class="dynamic-movieBox-tittle">
+							《防疫物资联盟》拍摄完成
+						</div>
+					</a>
+					<div class="dynamic-movieBox-content">
+						东莞防疫物资联盟影片拍摄完成，助力防疫物资出口宣传
+					</div>
+				</div>
+			</div>
+			<!-- 分页环节 -->
+			<div class="news">
+				<div class="newsTop">
+					<div class="newsTop-left"></div>
+					<div class="newsTop-right">更多><img src="" alt=""></div>
+				</div>
+				<!-- 分页部分 -->
+				<div id="containet">
+					<ul id="pageMain">
+						<li>
+							<div class="newsCenter">
+								<div class="newsCenter-child">
+									<div class="newsCenter-child-tittle">
+										<a href="#"><span class="question">公益宣传片制作公司有哪些可靠？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+									</div>
+									<div class="newsCenter-child-content">
+										<a href="#"><span class="question">个人宣传片拍摄技巧一般有哪些？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+										<a href="#"><span class="question">个人宣传片拍摄技巧一般有哪些？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+										<a href="#"><span class="question">个人宣传片拍摄技巧一般有哪些？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+										<a href="#"><span class="question">个人宣传片拍摄技巧一般有哪些？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+										<a href="#"><span class="question">个人宣传片拍摄技巧一般有哪些？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+										<a href="#"><span class="question">个人宣传片拍摄技巧一般有哪些？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+										<a href="#"><span class="question">个人宣传片拍摄技巧一般有哪些？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+									</div>
+								</div>
+								<div class="newsCenter-child">
+									<div class="newsCenter-child-tittle">
+										<a href="#"><span class="question">公司宣传片视频制作公司应该怎么选择？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+									</div>
+									<div class="newsCenter-child-content">
+										<a href="#"><span class="question">个人宣传片拍摄技巧一般有哪些？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+										<a href="#"><span class="question">个人宣传片拍摄技巧一般有哪些？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+										<a href="#"><span class="question">个人宣传片拍摄技巧一般有哪些？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+										<a href="#"><span class="question">个人宣传片拍摄技巧一般有哪些？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+										<a href="#"><span class="question">个人宣传片拍摄技巧一般有哪些？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+										<a href="#"><span class="question">个人宣传片拍摄技巧一般有哪些？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+										<a href="#"><span class="question">个人宣传片拍摄技巧一般有哪些？</span><span
+												class="newsTime">2022/08/01</span></a>
+										<div class="cell"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							第二页
+						</li>
+						<li>
+							第三页
+						</li>
+					</ul>
+					<div id="pageBox">
+						<span id="prev">上一页</span>
+						<ul id="pageNav"></ul>
+						<span id="next">下一页</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 这是第五栏的合作伙伴 -->
+	<div class="cooperativePartner">
+		<img src="../static/friendBG.png">
+		<div class="cooperativePartner-tittle">
+			COOPERATIVE PARTNER
+		</div>
+		<div class="cooperativePartner-chineseTittle">
+			合作伙伴
+		</div>
+		<!-- 走马灯效果 -->
+		<div class="swiper-container" style="width: 1000px;" id="case4">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../static/trademark.png"></div>
+				<div class="swiper-slide"><img src="../static/trademark.png"></div>
+				<div class="swiper-slide"><img src="../static/trademark.png"></div>
+				<div class="swiper-slide"><img src="../static/trademark.png"></div>
+				<div class="swiper-slide"><img src="../static/trademark.png"></div>
+				<div class="swiper-slide"><img src="../static/trademark.png"></div>
+				<div class="swiper-slide"><img src="../static/trademark.png"></div>
+				<div class="swiper-slide"><img src="../static/trademark.png"></div>
+				<div class="swiper-slide"><img src="../static/trademark.png"></div>
+				<div class="swiper-slide"><img src="../static/trademark.png"></div>
+				<div class="swiper-slide"><img src="../static/trademark.png"></div>
+			</div>
+		</div>
+	</div>
+	<!-- 这是第六栏友情链接 -->
+	<div class="tittleBox" style="margin-bottom: 50px;">
+		<div class="linkExchangeTop">&ensp;友情链接&ensp;&ensp;<span>LINKS</span></div>
+		<div class="linkExchangeContent">
+			<a href="">摄影加盟</a>
+			<a href="">宣传片拍摄</a>
+			<a href="">茂名装修</a>
+			<a href="">石家庄标识设计</a>
+			<a href="">宣传片制作公司</a>
+			<a href="">深圳宣传片设计</a>
+		</div>
+	</div>
+	<!-- 第七栏最下边黑色的 -->
+	<div class="homePageFooter">
+		<div class="homePageFooter-top">
+			<div class="homePageFooter-top-left">
+				<img src="../static/QRCode.png" alt="" srcset="">
+				项目经理微信
+			</div>
+			<div class="homePageFooter-top-center">
+				<div class="companyName">
+					深圳市大航海数字影像有限公司
+				</div>
+				<span>
+					地址：深圳市龙岗区平吉大道9号华熠大厦A栋712号
+				</span>
+				<span>分部：南山区南光路13号中兴工业城8栋401号</span>
+				<span>邮箱：pyj@0755dhh.com</span>
+				<span>电话：400-1088-775</span>
+				<div class="projectManagerPhoneNum">18620382550 项目经理</div>
+			</div>
+			<div class="homePageFooter-top-right">
+				<div class="homePageFooter-top-right-tittle">
+					<div class="movieShow">
+						影片鉴赏
+					</div>
+				</div>
+				<div class="homePageFooter-top-right-content">
+					<div class="homePageFooter-top-right-content-left">
+						<a href="#">企业宣传片</a>
+						<a href="#">产品视频</a>
+						<a href="#">地产动画</a>
+					</div>
+					<div class="homePageFooter-top-right-content-right">
+						<a href="#">三维动画</a>
+						<a href="#">Flash动画</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="homePageFooter-bottom">
+			<div class="homePageFooter-bottom-child">
+				<div class="homePageFooter-bottom-child-top">
+					©深圳市大航海数字影像有限公司 版权所有
+				</div>
+				<div class="homePageFooter-bottom-child-bottom">
+					粤ICP备20063353号
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- 分页效果 -->
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="../js/paging.js"></script>
+<!-- 走马灯效果 -->
+<script type="text/javascript">
+	$(function () {
+		var swiper = new Swiper('#case4', {
+			loop: true, //允许从第一张到最后一张，或者从最后一张到第一张  循环属性
+			slidesPerView: 6, // 设置显示6张
+			//centeredSlides : true,     //使当前图片居中显示
+			freeMode: true, // 使幻灯片滑动时不止滑动一格，且不会自动贴合 
+			slidesPerGroup: 1, //定义1张图片为一组
+			autoplay: true, //可选选项，自动滑动
+			speed: 3500, //设置过度时间
+			grabCursor: true, //鼠标样式根据浏览器不同而定 
+			autoplay: {
+				delay: 1,
+				disableOnInteraction: false,
+			},
+			/*  设置每隔3500毫秒切换 */
+		});
+		/*鼠标悬停 停止动画 */
+		$('.swiper-slide').mouseenter(function () {
+			swiper.autoplay.stop();
+		})
+		$('.swiper-slide').mouseleave(function () {
+			swiper.autoplay.start();
+		})
+
+	});
+</script>
+<script>
+	// 监听页面高度
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > 1800) {
+			$('#ball1').css({
+				opacity: '1'
+			})
+			$('#ball3').css({
+				opacity: '1'
+			})
+		}
+	});
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > 1900) {
+			$('#ball2').css({
+				opacity: '1'
+			})
+			$('#ball4').css({
+				opacity: '1'
+			})
+		}
+	});
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > 2100) {
+			$('#ball5').css({
+				opacity: '1'
+			})
+
+		}
+	});
+	// tab栏
+	// 当前网页的tabBtn默认下划线 color
+	$('.tabList-box').children().eq(0).css({
+		borderBottom: '1px solid #1e50ae'
+	})
+	$('.tabList-box').children().eq(0).children().css({
+		color: '#1e50ae'
+	})
+	// 修改picture里的img
+	// 第一个
+	$('.vidioBox1').mouseover(function () {
+		$(this).children().children().eq(0).attr('src', '../static/whiteFlim.png')
+	})
+	$('.vidioBox1').mouseout(function () {
+		$(this).children().children().eq(0).attr('src', '../static/film.png')
+	})
+	// 第二个
+	$('.vidioBox2').mouseover(function () {
+		$(this).children().children().eq(0).attr('src', '../static/white Product video.png')
+	})
+	$('.vidioBox2').mouseout(function () {
+		$(this).children().children().eq(0).attr('src', '../static/Product video.png')
+	})
+	// 第三个
+	$('.vidioBox3').mouseover(function () {
+		$(this).children().children().eq(0).attr('src', '../static/white animation.png')
+	})
+	$('.vidioBox3').mouseout(function () {
+		$(this).children().children().eq(0).attr('src', '../static/animation.png')
+	})
+	// 第三个
+	$('.vidioBox4').mouseover(function () {
+		$(this).children().children().eq(0).attr('src', '../static/white builder animation.png')
+	})
+	$('.vidioBox4').mouseout(function () {
+		$(this).children().children().eq(0).attr('src', '../static/build animation.png')
+	})
+	// 修改背景 及字体颜色还有大小效果
+	let vidioBox = $('.vidioBoxHome').each(function (index, element) {
+		$(element).mouseover(function () {
+			$(this).children().css({
+				backgroundColor: '#b38d54',
+			})
+			$(this).children().children().eq(1).css({
+				color: '#ffffff'
+			})
+			$(this).css({
+				backgroundSize: '110% 110%'
+			})
+		})
+		$(element).mouseout(function () {
+			$(this).children().css({
+				backgroundColor: '#ffffff',
+			})
+			$(this).children().children().eq(1).css({
+				color: 'rgb(119, 119, 119)'
+			})
+			$(this).css({
+				backgroundSize: '100% 100%'
+			})
+		})
+	})
+</script>
+
+</html>

@@ -1,0 +1,57 @@
+
+        #containet {
+            width: 1200px;
+            display: inline-block;
+            margin: auto;
+            display: flex;
+            margin-top: 0px;
+            flex-direction: column;
+            align-items: center;
+        }
+ 
+        #pageMain li {
+            list-style: none;
+            line-height: 22px;
+        }
+ 
+        #pageBox {
+           
+            margin-top: 30px;
+        }
+ 
+        #pageBox span {
+            display: inline-block;
+            width: 60px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            color: #000;
+ 
+        }
+ 
+        #pageNav {
+            display: inline-block;
+        }
+ 
+        #pageNav a {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            color: #3a87ad;
+            text-decoration: none;
+        }
+ 
+        #pageNav a.active, #pageNav a:hover {
+            background: #3a87ad;
+            color: #EFEFEF;
+        }
+ 
+        #prev:hover {
+            cursor: pointer;
+        }
+ 
+        #next:hover {
+            cursor: pointer;
+        }

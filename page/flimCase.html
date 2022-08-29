@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- 这是第二个影片案例页面 -->
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>大航海影像</title>
+		<!-- 引入jquery -->
+		<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<!-- tab触碰效果 -->
+		<script src="../js/tabList.js"></script>
+		<!-- 头部 -->
+		<link rel="stylesheet" href="../css/header.css">
+		<!-- footer.css -->
+		<link rel="stylesheet" href="../css/footer.css">
+		<!-- bannerImg -->
+		<link rel="stylesheet" href="../css/banner.css">
+		<!-- 这个页面的css -->
+		<link rel="stylesheet" href="../css/flimCase.css">
+	</head>
+
+	<body>
+		<!-- 头部 -->
+		<div id="header">
+			<div class="header-box">
+				<div class="header-box-left">
+					<div class="logo"><img src="../static/logo.png" alt="" srcset=""></div>
+					<div class="introduce">打造企业营销视觉盛宴</div>
+				</div>
+				<div class="tabList">
+					<div class="tabList-box">
+						<div class="homePage" id="tabList"><a href="http://l010118.3vfree.cn/GreatNavigation/page/homePage.html">首页</a>
+						</div>
+						<div class="filmCase" id="tabList"><a href="http://l010118.3vfree.cn/GreatNavigation/page/flimCase.html">影片案例<img src="../static/turndown.png" alt=""></a>
+						</div>
+						<div class="serviceQuotation" id="tabList"><a href="http://l010118.3vfree.cn/GreatNavigation/page/ServiceQuotation.html">服务报价</a></div>
+						<div class="consultingTrends" id="tabList"><a href="http://l010118.3vfree.cn/GreatNavigation/page/ConsultingTrends.html">咨询动态</a></div>
+						<div class="greatNavigation" id="tabList"><a href="http://l010118.3vfree.cn/GreatNavigation/page/GreatNavigation.html">大航海介绍</a></div>
+						<div class="contacUs" id="tabList"><a href="http://l010118.3vfree.cn/GreatNavigation/page/contactUs.html">联系我们</a></div>
+						<div class="phoneNumber" style="font-size: 12px;"><a href="#">TEL 400-1088-755</a></div>
+					</div>
+				</div>
+				<div class="filmCaseList">
+					<div class="empty">
+						
+					</div>
+					<a href="#">
+						<div class="filmCaseList-child">
+							企业宣传片
+						</div>
+					</a>
+					<a href="#">
+						<div class="filmCaseList-child">
+							产品视频
+						</div>
+					</a>
+					<a href="#">
+						<div class="filmCaseList-child">
+							三维动画
+						</div>
+					</a>
+					<a href="#">
+						<div class="filmCaseList-child">
+							地产动画
+						</div>
+					</a>
+					<a href="#">
+						<div class="filmCaseList-child">
+							Flash动画
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 一个空盒子 避免tab栏遮掩 -->
+		<div class="emptyBox"></div>
+		<!-- tab栏之下banner  部分 -->
+		<div class="banner">
+			<div class="bannerImg"><a href="#"><img src="../static/filmEgBanner.png" alt="" srcset=""></a></div>
+		</div>
+		<!-- 第三栏影片类型 -->
+		<div class="vidioTypeBox">
+			<div class="vidioType">
+				<!-- 左侧的几个菜单 -->
+				<div class="vidioType-left">
+					<div class="vidioType-left-top">
+						<div class="vidio-left-top-borderLeft"></div>
+						<div class="vidioType-left-topBox">
+							<span class="vidioType-left-top-tittle">影片类型</span>
+							<span class="vidioType-left-top-English">Vidio Type</span>
+						</div>
+					</div>
+					<div class="vidioType-left-bottom">
+						<ul>
+							<a href="#">
+								<li>企业宣传片</li>
+							</a>
+							<a href="#">
+								<li>产品视频</li>
+							</a>
+							<a href="#">
+								<li>三维动画</li>
+							</a>
+							<a href="#">
+								<li>地产动画</li>
+							</a>
+							<a href="#">
+								<li>Flish动画</li>
+							</a>
+						</ul>
+					</div>
+				</div>
+				<!-- 右侧部分 -->
+				<div class="vidioType-right">
+					<!-- 当前位置和搜索框 -->
+					<div class="vidioType-right-top">
+						<!-- 当前位置 -->
+						<div class="currentLocation">
+							当前位置：<span>首页</span>&ensp;>&ensp;<span>影片欣赏</span>&ensp;>&ensp;<span>企业宣传片</span>
+						</div>
+						<!-- 搜索框 -->
+						<div class="search">
+							<input type="text">
+							<div class="searchImg"></div>
+						</div>
+					</div>
+					<!-- 企业宣传片 行业细分的标题 -->
+					<div class="publicize-tittle">
+						企业宣传片&ensp;行业细分&ensp;>
+					</div>
+					<!-- 企业宣传片 行业细分的内容 -->
+					<div class="publicize-content">
+						<!-- 上边几个菜单 -->
+						<div class="publicize-content-top">
+							<a href="#">生产制造</a>
+							<span>|</span>
+							<a href="#">金融地产</a>
+							<span>|</span>
+							<a href="#">医疗健康</a>
+							<span>|</span>
+							<a href="#">科技信息</a>
+							<span>|</span>
+							<a href="#">食品餐饮</a>
+							<span>|</span>
+							<a href="#">其他类</a>
+						</div>
+						<!-- 这是中间的那条线 -->
+						<div class="publicize-content-line"></div>
+						<!-- 下边几个菜单 -->
+						<div class="publicize-content-bottom">
+							<a href="#">家电家具</a>
+							<span>|</span>
+							<a href="#">教育培训</a>
+							<span>|</span>
+							<a href="#">交通运输</a>
+							<span>|</span>
+							<a href="#">珠宝服饰</a>
+							<span>|</span>
+							<a href="#">城市人文</a>
+							<span>|</span>
+						</div>
+					</div>
+					<!-- / vidio 视频部分 -->
+					<div class="publicize-vidio">
+						<!-- 每行三个视频 一共五行 -->
+						<div class="publicize-vidio-line">
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+						</div>
+						<!-- 每行三个视频 一共五行 -->
+						<div class="publicize-vidio-line">
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+						</div>
+						<!-- 每行三个视频 一共五行 -->
+						<div class="publicize-vidio-line">
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+						</div>
+						<!-- 每行三个视频 一共五行 -->
+						<div class="publicize-vidio-line">
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+						</div>
+						<!-- 每行三个视频 一共五行 -->
+						<div class="publicize-vidio-line">
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+							<div class="publicize-vidioBox">
+								<a href="#">
+									<div class="publicize-vidio-img">
+										<img src="../static/publicize-vidio-img.png" alt="" srcset="">
+										<div class="vidioPlayer">
+											<img src="../static/vidioPlay.png" alt="" srcset="">
+										</div>
+									</div>
+								</a>
+								<div class="publicize-vidio-tittle">
+									<a href="#">风机电机-企业宣传片</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 视频下方的一个按钮 -->
+					<div class="watchMore">
+						<a href="#">更多案例 选择细分<img src="../static/turndown.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 倒数第二个，黑色上边那个 -->
+		<div class="successNumberBox">
+			<div class="successNumber">
+				<div class="successNumber-left">
+					<div class="successYear">
+						10
+					</div>
+					<div class="successText">
+						年 / 影视行业经验
+					</div>
+				</div>
+				<div class="successNumber-center">
+					<div class="successYear">
+						800
+					</div>
+					<div class="successText">
+						个 / 成功交片案例
+					</div>
+				</div>
+				<div class="successNumber-right">
+					<div class="successYear">
+						200
+					</div>
+					<div class="successText">
+						家 / 各行业服务单位
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 最下边黑色的 -->
+		<div class="homePageFooter">
+			<div class="homePageFooter-top">
+				<div class="homePageFooter-top-left">
+					<img src="../static/QRCode.png" alt="" srcset="">
+					项目经理微信
+				</div>
+				<div class="homePageFooter-top-center">
+					<div class="companyName">
+						深圳市大航海数字影像有限公司
+					</div>
+					<span>
+						地址：深圳市龙岗区平吉大道9号华熠大厦A栋712号
+					</span>
+					<span>分部：南山区南光路13号中兴工业城8栋401号</span>
+					<span>邮箱：pyj@0755dhh.com</span>
+					<span>电话：400-1088-775</span>
+					<div class="projectManagerPhoneNum">18620382550 项目经理</div>
+				</div>
+				<div class="homePageFooter-top-right">
+					<div class="homePageFooter-top-right-tittle">
+						<div class="movieShow">
+							影片鉴赏
+						</div>
+					</div>
+					<div class="homePageFooter-top-right-content">
+						<div class="homePageFooter-top-right-content-left">
+							<a href="#">企业宣传片</a>
+							<a href="#">产品视频</a>
+							<a href="#">地产动画</a>
+						</div>
+						<div class="homePageFooter-top-right-content-right">
+							<a href="#">三维动画</a>
+							<a href="#">Flash动画</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="homePageFooter-bottom">
+				<div class="homePageFooter-bottom-child">
+					<div class="homePageFooter-bottom-child-top">
+						©深圳市大航海数字影像有限公司 版权所有
+					</div>
+					<div class="homePageFooter-bottom-child-bottom">
+						粤ICP备20063353号
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		// tab栏
+		// 当前网页的tabBtn默认下划线 color
+		console.log($('.tabList-box').children().eq(1));
+		$('.tabList-box').children().eq(1).css({
+			borderBottom: '1px solid #1e50ae'
+		})
+		$('.tabList-box').children().eq(1).children().css({
+			color: '#1e50ae'
+		})
+	</script>
+</html>

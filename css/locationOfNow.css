@@ -1,0 +1,22 @@
+/* 
+*****
+当前位置的css */
+.locationOfNowBox {
+    width: 100%;
+    min-width: 1200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.locationOfNow {
+    width: 1200px;
+    height: 100%;
+    color: #666666;
+    line-height: 60px;
+    border-bottom: 0.5px solid #ccc;
+}
+
+.locationOfNow span {
+    color: dodgerblue;
+}

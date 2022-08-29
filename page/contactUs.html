@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 这是第六个页面 联系我们 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们</title>
+    <!-- 引入jquery -->
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <!-- tab触碰效果 -->
+    <script src="../js/tabList.js"></script>
+    <!-- 头部 -->
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- footer.css -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- banner -->
+    <link rel="stylesheet" href="../css/banner.css">
+    <!-- 当前位置 locationOfNow -->
+    <link rel="stylesheet" href="../css/locationOfNow.css">
+    <!-- 本页面的css -->
+    <link rel="stylesheet" href="../css/contactUs.css">
+    <!-- jquery插件 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 地图插件 -->
+    <link rel="stylesheet" href="../css/map.css">
+    <script src="https://api.map.baidu.com/api?v=2.0&ak=hmQyVPVGhvOw71CpymE558poKNqIF68b"></script>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="../js/jquery.baiduMap.min.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="header">
+        <div class="header-box">
+            <div class="header-box-left">
+                <div class="logo"><img src="../static/logo.png" alt="" srcset=""></div>
+                <div class="introduce">打造企业营销视觉盛宴</div>
+            </div>
+            <div class="tabList">
+                <div class="tabList-box">
+                    <div class="homePage tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/homePage.html">首页</a></div>
+                    <div class="filmCase tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/flimCase.html">影片案例<img src="../static/turndown.png" alt=""></a></div>
+                    <div class="serviceQuotation tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/ServiceQuotation.html">服务报价</a></div>
+                    <div class="consultingTrends tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/ConsultingTrends.html">咨询动态</a></div>
+                    <div class="greatNavigation tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/GreatNavigation.html">大航海介绍</a></div>
+                    <div class="contacUs  tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/contactUs.html">联系我们</a></div>
+                    <div class="phoneNumber" style="font-size: 12px;">TEL 400-1088-755</div>
+                </div>
+            </div>
+            <div class="filmCaseList">
+                <div class="empty">
+
+                </div>
+                <a href="#">
+                    <div class="filmCaseList-child">
+                        企业宣传片
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="filmCaseList-child">
+                        产品视频
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="filmCaseList-child">
+                        三维动画
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="filmCaseList-child">
+                        地产动画
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="filmCaseList-child">
+                        Flash动画
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 一个空盒子 避免tab栏遮掩 -->
+    <div class="emptyBox"></div>
+    <!-- tab栏之下banner  部分 -->
+    <div class="banner">
+        <!-- <div class="header"></div> -->
+        <div class="bannerImg"><img src="../static/coutactUsaBanner.png" alt="" srcset=""></div>
+    </div>
+    <!-- banner下的当前位置 -->
+    <div class="locationOfNowBox">
+        <div class="locationOfNow">
+            当前位置：<span>首页</span>&ensp;>&ensp;<span>联系我们
+        </div>
+    </div>
+    <div class="bigTittleBox">
+        <div class="contact">
+            <span>联系方式</span>
+            &ensp;&ensp;/&ensp;&ensp;
+            <span>CONTENT</span>
+        </div>
+        <div class="contactUs-LOGO">
+            <img src="../static/logo.png" alt="">
+        </div>
+        <div class="contactInformation">
+            <div class="contactInformation-left">
+                <!-- 电话邮箱地址 -->
+                <div class="contactInformation-left-child">
+                    <div class="contactInformation-left-child-left">
+                        <img src="../static/phone.png" alt="">
+                    </div>
+                    <div class="contactInformation-left-child-right">
+                        <span>400-1088-775</span>
+                        <span>18620382550&ensp;&ensp;项目经理</span>
+                    </div>
+                </div>
+                <div class="contactInformation-left-child">
+                    <div class="contactInformation-left-child-left">
+                        <img src="../static/e-mail.png" alt="">
+                    </div>
+                    <div class="contactInformation-left-child-right">
+                        <span>pyj@0755dhh.com</span>
+                    </div>
+                </div>
+                <div class="contactInformation-left-child">
+                    <div class="contactInformation-left-child-left">
+                        <img src="../static/address.png" alt="">
+                    </div>
+                    <div class="contactInformation-left-child-right">
+                        <span>深圳市龙岗区平吉大道9号华熠大厦A栋712号</span>
+                        <span>南山区南光路13号中兴工业城8栋401号（分部）</span>
+                    </div>
+                </div>
+                <!-- 二维码*2 -->
+                <div class="QRCodeBox">
+                    <img src="../static/QRCode.png" alt="">
+                    <img src="../static/customerServiceQRcode.png" alt="">
+                </div>
+            </div>
+            <!-- 右边的地图 -->
+            <div class="contactInformation-right">
+                <div class="map">
+                    <div class="right">
+                        <div id="container2" class="container"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 加入我们 -->
+    <div class="joinUsTitle">
+        <span>Welcome To Join Us</span>
+        <p>加&ensp;入&ensp;我&ensp;们</p>
+        <img src="../static/fiveQuestion-tittle-img.png" alt="" srcset="">
+        <span class="joinUsContent">公司团队均为80、90后，活跃的上班氛围，开放的公司文化，完善的福利体系:五险、交通及午餐</span>
+        <!-- 三个工作 -->
+        <div class="job">
+            <!-- 第一个 -->
+            <div class="jobList">
+                <div class="jobList-tittle">
+                    <span>制作部</span>
+                    <span class="takeUp"></span>
+                </div>
+                <div class="jobName">
+                    <!-- 左右两个装要求的盒子 -->
+                    <div class="jobName-box">
+                        <div class="blueLine"></div>
+                        <div class="jobName-box-top">
+                            <div class="jobName-box-top-left">
+                                职位名称：影视特效师
+                            </div>
+                            <div class="jobName-box-top-right">
+                                发布时间：2021-5-20
+                            </div>
+                        </div>
+                        <div class="jobName-box-center">
+                            招聘人数：2人
+                        </div>
+                        <div class="jobName-box-center">
+                            岗位职责：<br>
+                            1、能独立带项目负责影视片头、广告片、宣传片等包装创意方案设计、视觉效果制作；<br>
+                            2、理解项目脚本，运用影视镜头语言对视频内容进行二次创作，参与项目的前期策划、分镜头设计与素材收集。<br>
+                            3、跟踪前沿设计趋势，完善日常技术储备与设计、制作素材资源。<br>
+                            5、了解影视后期特效制作、宣传片后期制作等流程。<br>
+                            <br>
+                            <br>
+                            任职要求：<br>
+                            1、影视、美术、动画、广告等相关专业院校毕业，2年以上从事影视工作经验；<br>
+                            2，有宣传片、广告片、专题片经验，独立成片。<br>
+                            3、熟悉视频拍摄及后期制作流程，能独立完成栏目包装、影视片头、广告片、宣传片的制作，包括创意设计、分镜头设计、动画制作、特效工作；有一定的艺术鉴赏力，色彩感觉良好，有画面感和良好的审美角度；<br>
+                        </div>
+                    </div>
+                    <div class="jobName-box">
+                        <div class="blueLine"></div>
+                        <div class="jobName-box-top">
+                            <div class="jobName-box-top-left">
+                                职位名称：影视特效师
+                            </div>
+                            <div class="jobName-box-top-right">
+                                发布时间：2021-5-20
+                            </div>
+                        </div>
+                        <div class="jobName-box-center">
+                            招聘人数：2人
+                        </div>
+                        <div class="jobName-box-center">
+                            岗位职责：<br>
+                            1、能独立带项目负责影视片头、广告片、宣传片等包装创意方案设计、视觉效果制作；<br>
+                            2、理解项目脚本，运用影视镜头语言对视频内容进行二次创作，参与项目的前期策划、分镜头设计与素材收集。<br>
+                            3、跟踪前沿设计趋势，完善日常技术储备与设计、制作素材资源。<br>
+                            5、了解影视后期特效制作、宣传片后期制作等流程。<br>
+                            <br>
+                            <br>
+                            任职要求：<br>
+                            1、影视、美术、动画、广告等相关专业院校毕业，2年以上从事影视工作经验；<br>
+                            2，有宣传片、广告片、专题片经验，独立成片。<br>
+                            3、熟悉视频拍摄及后期制作流程，能独立完成栏目包装、影视片头、广告片、宣传片的制作，包括创意设计、分镜头设计、动画制作、特效工作；有一定的艺术鉴赏力，色彩感觉良好，有画面感和良好的审美角度；<br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 第二个 -->
+            <div class="jobList">
+                <div class="jobList-tittle">
+                    <span>文案部</span>
+                    <span class="takeUp"></span>
+                </div>
+                <div class="jobName">
+                    <!-- 左右两个装要求的盒子 -->
+                    <div class="jobName-box">
+                        <div class="blueLine"></div>
+                        <div class="jobName-box-top">
+                            <div class="jobName-box-top-left">
+                                职位名称：影视特效师
+                            </div>
+                            <div class="jobName-box-top-right">
+                                发布时间：2021-5-20
+                            </div>
+                        </div>
+                        <div class="jobName-box-center">
+                            招聘人数：2人
+                        </div>
+                        <div class="jobName-box-center">
+                            岗位职责：<br>
+                            1、能独立带项目负责影视片头、广告片、宣传片等包装创意方案设计、视觉效果制作；<br>
+                            2、理解项目脚本，运用影视镜头语言对视频内容进行二次创作，参与项目的前期策划、分镜头设计与素材收集。<br>
+                            3、跟踪前沿设计趋势，完善日常技术储备与设计、制作素材资源。<br>
+                            5、了解影视后期特效制作、宣传片后期制作等流程。<br>
+                            <br>
+                            <br>
+                            任职要求：<br>
+                            1、影视、美术、动画、广告等相关专业院校毕业，2年以上从事影视工作经验；<br>
+                            2，有宣传片、广告片、专题片经验，独立成片。<br>
+                            3、熟悉视频拍摄及后期制作流程，能独立完成栏目包装、影视片头、广告片、宣传片的制作，包括创意设计、分镜头设计、动画制作、特效工作；有一定的艺术鉴赏力，色彩感觉良好，有画面感和良好的审美角度；<br>
+                        </div>
+                    </div>
+                    <div class="jobName-box">
+                        <div class="blueLine"></div>
+                        <div class="jobName-box-top">
+                            <div class="jobName-box-top-left">
+                                职位名称：影视特效师
+                            </div>
+                            <div class="jobName-box-top-right">
+                                发布时间：2021-5-20
+                            </div>
+                        </div>
+                        <div class="jobName-box-center">
+                            招聘人数：2人
+                        </div>
+                        <div class="jobName-box-center">
+                            岗位职责：<br>
+                            1、能独立带项目负责影视片头、广告片、宣传片等包装创意方案设计、视觉效果制作；<br>
+                            2、理解项目脚本，运用影视镜头语言对视频内容进行二次创作，参与项目的前期策划、分镜头设计与素材收集。<br>
+                            3、跟踪前沿设计趋势，完善日常技术储备与设计、制作素材资源。<br>
+                            5、了解影视后期特效制作、宣传片后期制作等流程。<br>
+                            <br>
+                            <br>
+                            任职要求：<br>
+                            1、影视、美术、动画、广告等相关专业院校毕业，2年以上从事影视工作经验；<br>
+                            2，有宣传片、广告片、专题片经验，独立成片。<br>
+                            3、熟悉视频拍摄及后期制作流程，能独立完成栏目包装、影视片头、广告片、宣传片的制作，包括创意设计、分镜头设计、动画制作、特效工作；有一定的艺术鉴赏力，色彩感觉良好，有画面感和良好的审美角度；<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 第三个 -->
+            <div class="jobList">
+                <div class="jobList-tittle">
+                    <span>摄制组</span>
+                    <span class="takeUp"></span>
+                </div>
+                <div class="jobName">
+                    <!-- 左右两个装要求的盒子 -->
+                    <div class="jobName-box">
+                        <div class="blueLine"></div>
+                        <div class="jobName-box-top">
+                            <div class="jobName-box-top-left">
+                                职位名称：影视特效师
+                            </div>
+                            <div class="jobName-box-top-right">
+                                发布时间：2021-5-20
+                            </div>
+                        </div>
+                        <div class="jobName-box-center">
+                            招聘人数：2人
+                        </div>
+                        <div class="jobName-box-center">
+                            岗位职责：<br>
+                            1、能独立带项目负责影视片头、广告片、宣传片等包装创意方案设计、视觉效果制作；<br>
+                            2、理解项目脚本，运用影视镜头语言对视频内容进行二次创作，参与项目的前期策划、分镜头设计与素材收集。<br>
+                            3、跟踪前沿设计趋势，完善日常技术储备与设计、制作素材资源。<br>
+                            5、了解影视后期特效制作、宣传片后期制作等流程。<br>
+                            <br>
+                            <br>
+                            任职要求：<br>
+                            1、影视、美术、动画、广告等相关专业院校毕业，2年以上从事影视工作经验；<br>
+                            2，有宣传片、广告片、专题片经验，独立成片。<br>
+                            3、熟悉视频拍摄及后期制作流程，能独立完成栏目包装、影视片头、广告片、宣传片的制作，包括创意设计、分镜头设计、动画制作、特效工作；有一定的艺术鉴赏力，色彩感觉良好，有画面感和良好的审美角度；<br>
+                        </div>
+                    </div>
+                    <div class="jobName-box">
+                        <div class="blueLine"></div>
+                        <div class="jobName-box-top">
+                            <div class="jobName-box-top-left">
+                                职位名称：影视特效师
+                            </div>
+                            <div class="jobName-box-top-right">
+                                发布时间：2021-5-20
+                            </div>
+                        </div>
+                        <div class="jobName-box-center">
+                            招聘人数：2人
+                        </div>
+                        <div class="jobName-box-center">
+                            岗位职责：<br>
+                            1、能独立带项目负责影视片头、广告片、宣传片等包装创意方案设计、视觉效果制作；<br>
+                            2、理解项目脚本，运用影视镜头语言对视频内容进行二次创作，参与项目的前期策划、分镜头设计与素材收集。<br>
+                            3、跟踪前沿设计趋势，完善日常技术储备与设计、制作素材资源。<br>
+                            5、了解影视后期特效制作、宣传片后期制作等流程。<br>
+                            <br>
+                            <br>
+                            任职要求：<br>
+                            1、影视、美术、动画、广告等相关专业院校毕业，2年以上从事影视工作经验；<br>
+                            2，有宣传片、广告片、专题片经验，独立成片。<br>
+                            3、熟悉视频拍摄及后期制作流程，能独立完成栏目包装、影视片头、广告片、宣传片的制作，包括创意设计、分镜头设计、动画制作、特效工作；有一定的艺术鉴赏力，色彩感觉良好，有画面感和良好的审美角度；<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- 最下边黑色的 -->
+    <div class="homePageFooter">
+        <div class="homePageFooter-top">
+            <div class="homePageFooter-top-left">
+                <img src="../static/QRCode.png" alt="" srcset="">
+                项目经理微信
+            </div>
+            <div class="homePageFooter-top-center">
+                <div class="companyName">
+                    深圳市大航海数字影像有限公司
+                </div>
+                <span>
+                    地址：深圳市龙岗区平吉大道9号华熠大厦A栋712号
+                </span>
+                <span>分部：南山区南光路13号中兴工业城8栋401号</span>
+                <span>邮箱：pyj@0755dhh.com</span>
+                <span>电话：400-1088-775</span>
+                <div class="projectManagerPhoneNum">18620382550 项目经理</div>
+            </div>
+            <div class="homePageFooter-top-right">
+                <div class="homePageFooter-top-right-tittle">
+                    <div class="movieShow">
+                        影片鉴赏
+                    </div>
+                </div>
+                <div class="homePageFooter-top-right-content">
+                    <div class="homePageFooter-top-right-content-left">
+                        <a href="#">企业宣传片</a>
+                        <a href="#">产品视频</a>
+                        <a href="#">地产动画</a>
+                    </div>
+                    <div class="homePageFooter-top-right-content-right">
+                        <a href="#">三维动画</a>
+                        <a href="#">Flash动画</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="homePageFooter-bottom">
+            <div class="homePageFooter-bottom-child">
+                <div class="homePageFooter-bottom-child-top">
+                    ©深圳市大航海数字影像有限公司 版权所有
+                </div>
+                <div class="homePageFooter-bottom-child-bottom">
+                    粤ICP备20063353号
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(function () {
+        $('.contact').css({
+            marginLeft: '0',
+            opacity: '1'
+        })
+    })
+    $('.contactInformation-left-child-left').each(function (index, element) {
+        $(element).css({
+            opacity: '1'
+        })
+    })
+    $('.contactInformation-left-child-right').each(function (index, element) {
+        $(element).css({
+            opacity: '1',
+            marginLeft: '20px'
+        })
+    })
+</script>
+<script>
+    // tab栏
+    // 当前网页的tabBtn默认下划线 color
+    console.log($('.tabList-box').children().eq(0));
+    $('.tabList-box').children().eq(5).css({
+        borderBottom: '1px solid #1e50ae'
+    })
+    $('.tabList-box').children().eq(5).children().css({
+        color: '#1e50ae'
+    })
+    let takeUp = $('.jobList-tittle').each(function (index, element) {
+        let flag = false
+        $(element).click(function () {
+            flag = !flag
+            if (flag == true) {
+                takeUp.parent().css({
+                    height: '50px',
+                    borderTop: 'none'
+                })
+
+                $(this).parent().css({
+                    height: '570px',
+                    borderTop: '3px solid #1e50ae'
+                })
+            } else {
+                takeUp.parent().css({
+                    height: '50px',
+                    borderTop: 'none'
+                })
+            }
+        })
+    })
+</script>
+<!-- 地图插件 -->
+<script type="text/javascript">
+    new BaiduMap({
+        id: "container2",
+        title: {
+            text: "北京故宫博物院",
+            className: "title"
+        },
+        content: {
+            className: "content",
+            text: ["地址：北京市东城区东华门大街"]
+        },
+        point: {
+            lng: "116.412222",
+            lat: "39.912345"
+        },
+        level: 15,
+        zoom: true,
+        type: ["地图", "卫星", "三维"],
+        width: 320,
+        height: 70,
+        icon: {
+            url: "../static/icon.png",
+            width: 36,
+            height: 36
+        }
+    });
+</script>
+
+</html>

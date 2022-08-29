@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 这是第三个服务报价页面 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大航海影像</title>
+	<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <!-- 头部 -->
+    <link rel="stylesheet" href="../css/header.css">
+	<script src="../js/tabList.js"></script>
+    <!-- footer.css -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- bannerImg -->
+    <link rel="stylesheet" href="../css/banner.css">
+    <!-- 当前位置 locationOfNow -->
+    <link rel="stylesheet" href="../css/locationOfNow.css">
+    <!-- 本页面的css -->
+    <link rel="stylesheet" href="../css/ServiceQuotation.css">
+</head>
+
+<body>
+    <!-- 最上边的tab栏 -->
+    <div id="header">
+        <div class="header-box">
+            <!-- 左边的logo -->
+            <div class="header-box-left">
+                <div class="logo"><img src="../static/logo.png" alt="" srcset=""></div>
+                <div class="introduce">打造企业营销视觉盛宴</div>
+            </div>
+            <!-- 右边的菜单栏 -->
+            <div class="tabList">
+                <div class="tabList-box">
+                    <div class="homePage tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/homePage.html">首页</a></div>
+                    <div class="filmCase tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/flimCase.html">影片案例<img src="../static/turndown.png" alt=""></a></div>
+                    <div class="serviceQuotation"><a href="http://l010118.3vfree.cn/GreatNavigation/page/ServiceQuotation.html">服务报价</a></div>
+                    <div class="consultingTrends tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/ConsultingTrends.html">咨询动态</a></div>
+                    <div class="greatNavigation tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/GreatNavigation.html">大航海介绍</a></div>
+                    <div class="contacUs tabBtn"><a href="http://l010118.3vfree.cn/GreatNavigation/page/contactUs.html">联系我们</a></div>
+                    <div class="phoneNumber tabBtn" style="font-size: 12px;">TEL 400-1088-755</div>
+                </div>
+            </div>
+			<div class="filmCaseList">
+				<div class="empty">
+					
+				</div>
+				<a href="#">
+					<div class="filmCaseList-child">
+						企业宣传片
+					</div>
+				</a>
+				<a href="#">
+					<div class="filmCaseList-child">
+						产品视频
+					</div>
+				</a>
+				<a href="#">
+					<div class="filmCaseList-child">
+						三维动画
+					</div>
+				</a>
+				<a href="#">
+					<div class="filmCaseList-child">
+						地产动画
+					</div>
+				</a>
+				<a href="#">
+					<div class="filmCaseList-child">
+						Flash动画
+					</div>
+				</a>
+			</div>
+        </div>
+    </div>
+    <!-- 一个空盒子 避免tab栏遮掩 -->
+    <div class="emptyBox"></div>
+    <!-- tab栏之下 banner -->
+    <div class="banner">
+        <!-- <div class="header"></div> -->
+        <div class="bannerImg"><img src="../static/ServiceQuotationBanner.png" alt="" srcset=""></div>
+    </div>
+    <!-- banner下的当前位置 -->
+    <div class="locationOfNowBox">
+        <div class="locationOfNow">
+            当前位置：<span>首页</span>&ensp;>&ensp;<span>服务报价
+        </div>
+    </div>
+    <!-- 当前位置下的一堆问题 -->
+    <div class="bigTittleBox">
+        <!-- 我们应如何选择bala bala -->
+        <div class="howToChoose">
+            <!-- 四个问题 -->
+            <div class="howToChoose-lineOne">如何选择合适的报价?</div>
+            <div class="howToChoose-lineTwo">为什么有些影片很<span>便宜</span>?</div>
+            <div class="howToChoose-lineThree">而有些影片很昂贵?</div>
+            <div class="howToChoose-lineFour">我们应该如何选择...</div>
+            <!-- 问题之下的...的因素 -->
+            <div class="priceFactor">
+                <!-- 小标题 -->
+                <div class="bigTittleBox-tittle">决定影片价格的因素</div>
+                <div class="bigTittleBox-tittle-content">不盲目追求便宜，从专业角度去分析影片价格组成部分，才知道影片预算花在了什么地方</div>
+            </div>
+            <!-- 影响价格的因素  内容 -->
+            <div class="priceFactor-content">
+                <!-- 左边时三张照片 -->
+                <div class="priceFactor-content-left">
+                    <div class="priceFactorImgBox">
+                        <a href="#"><img src="../static/priceFactorImg1.png" alt="" srcset=""></a>
+                    </div>
+                    <div class="priceFactorImgBox">
+                        <a href="#"><img src="../static/priceFactorImg.png" alt="" srcset=""></a>
+                    </div>
+                    <div class="priceFactorImgBox">
+                        <a href="#"><img src="../static/priceFactorImg3.png" alt="" srcset=""></a>
+                    </div>
+                </div>
+                <!-- 右边是介绍 -->
+                <div class="priceFactor-content-right">
+                    <div class="priceFactor-content-right-child">
+                        <div class="priceFactor-content-right-child-tittle">不同拍摄器材</div>
+                        <div class="priceFactor-content-right-child-ball"></div>
+                        <div class="priceFactor-content-right-child-content">
+                            使用专业级拍摄器材与灯光设备，才能拍出电影级画质，而普通的拍摄器材很难做到非常细腻的画质，而两者价格区别很大
+                        </div>
+                    </div>
+                    <div class="priceFactor-content-right-child">
+                        <div class="priceFactor-content-right-child-tittle">特效制作</div>
+                        <div class="priceFactor-content-right-child-ball"></div>
+                        <div class="priceFactor-content-right-child-content">
+                            使用专业级拍摄器材与灯光设备，才能拍出电影级画质，而普通的拍摄器材很难做到非常细腻的画质，而两者价格区别很大
+                        </div>
+                    </div>
+                    <div class="priceFactor-content-right-child">
+                        <div class="priceFactor-content-right-child-tittle">租赁拍摄场地</div>
+                        <div class="priceFactor-content-right-child-ball"></div>
+                        <div class="priceFactor-content-right-child-content">
+                            使用专业级拍摄器材与灯光设备，才能拍出电影级画质，而普通的拍摄器材很难做到非常细腻的画质，而两者价格区别很大
+                        </div>
+                    </div>
+                    <div class="priceFactor-content-right-child">
+                        <div class="priceFactor-content-right-child-tittle">模特选择</div>
+                        <div class="priceFactor-content-right-child-ball"></div>
+                        <div class="priceFactor-content-right-child-content">
+                            使用专业级拍摄器材与灯光设备，才能拍出电影级画质，而普通的拍摄器材很难做到非常细腻的画质，而两者价格区别很大
+                        </div>
+                    </div>
+                    <div class="priceFactor-content-right-child">
+                        <div class="priceFactor-content-right-child-tittle">是否有专职团队</div>
+                        <div class="priceFactor-content-right-child-ball"></div>
+                        <div class="priceFactor-content-right-child-content">
+                            使用专业级拍摄器材与灯光设备，才能拍出电影级画质，而普通的拍摄器材很难做到非常细腻的画质，而两者价格区别很大
+                        </div>
+                    </div>
+                    <div class="verticalLine"></div>
+                </div>
+            </div>
+            <!-- 高性价比就----- -->
+            <div class="pricePerformanceRatio">
+                <!-- 小标题 -->
+                <div class="bigTittleBox-tittle"><span>高性价比</span>就选大航海影响</div>
+                <div class="bigTittleBox-tittle-content">我们珍惜每一次客户的信任，不吹嘘、不夸大，实事求是的为客户提供超高性价比服务</div>
+                <!-- 小标题小字下边的盒子 -->
+                <div class="pricePerformanceRatioBox">
+                    <!-- 镜头左边 -->
+                    <div class="pricePerformanceRatioBox-content">
+                        <!-- 上边 -->
+                        <div class="pricePerformanceRatioBox-content-box">
+                            <div class="pricePerformanceRatioBox-content-number">
+                                01
+                            </div>
+                            <div class="pricePerformanceRatioBox-content-right">
+                                <div class="pricePerformanceRatioBox-content-right-top">
+                                    自由器材设备
+                                </div>
+                                <div class="pricePerformanceRatioBox-content-right-bottom">
+                                    公司持续投入摄像机、灯光、航拍等专业影视器材，比租赁设备<span>节省50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 下边 -->
+                        <div class="pricePerformanceRatioBox-content-box">
+                            <div class="pricePerformanceRatioBox-content-number">
+                                02
+                            </div>
+                            <div class="pricePerformanceRatioBox-content-right">
+                                <div class="pricePerformanceRatioBox-content-right-top">
+                                    自由器材设备
+                                </div>
+                                <div class="pricePerformanceRatioBox-content-right-bottom">
+                                    公司持续投入摄像机、灯光、航拍等专业影视器材，比租赁设备<span>节省50%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 镜头图片 -->
+                    <div class="pricePerformanceRatioBox-img">
+                        <img src="../static/cameraLens2.png" alt="">
+                    </div>
+                    <!-- 分割线 -->
+                    <div class="pricePerformanceRatioBox-line1"></div>
+                    <div class="pricePerformanceRatioBox-line2"></div>
+                    <!-- 镜头右边 -->
+                    <div class="pricePerformanceRatioBox-content">
+                        <!-- 上边 -->
+                        <div class="pricePerformanceRatioBox-content-box">
+                            <div class="pricePerformanceRatioBox-content-number">
+                                03
+                            </div>
+                            <div class="pricePerformanceRatioBox-content-right">
+                                <div class="pricePerformanceRatioBox-content-right-top">
+                                    自由器材设备
+                                </div>
+                                <div class="pricePerformanceRatioBox-content-right-bottom">
+                                    公司持续投入摄像机、灯光、航拍等专业影视器材，比租赁设备<span>节省50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 下边 -->
+                        <div class="pricePerformanceRatioBox-content-box">
+                            <div class="pricePerformanceRatioBox-content-number">
+                                04
+                            </div>
+                            <div class="pricePerformanceRatioBox-content-right">
+                                <div class="pricePerformanceRatioBox-content-right-top">
+                                    自由器材设备
+                                </div>
+                                <div class="pricePerformanceRatioBox-content-right-bottom">
+                                    公司持续投入摄像机、灯光、航拍等专业影视器材，比租赁设备<span>节省50%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 欢迎来咨询bala bala -->
+        <div class="WelcomeToConsult">
+            <!-- 四个问题 -->
+            <div class="howToChoose-lineOne">了解影片报价</div>
+            <div class="howToChoose-lineTwo" style="color: black;">欢迎前来咨询 &ensp;!&ensp;!&ensp;!</div>
+            <div class="howToChoose-lineThree">我们将耐心真诚的为您解答一切影片疑问</div>
+            <div class="howToChoose-lineFour">了解具体需求后，认真负责的给您超值报价</div>
+        </div>
+        <!-- 下边的了解详情按钮 -->
+        <a href="#">
+            <div class="learnMore">
+                了解详情报价
+            </div>
+        </a>
+        <!-- 标准服务流程 -->
+        <div class="standardServiceProcess">
+            <!-- 上边的标题 -->
+            <div class="standardServiceProcess-top">
+                <div class="standardServiceProcess-top-tittle">
+                    标准服务流程
+                    <span>SERVICE&ensp;MODE</span>
+                </div>
+                <div class="standardServiceProcess-top-content">
+                    严格执行标准化流程，匠心精神让每一次创作精益求精
+                </div>
+            </div>
+            <!-- 下边的流程 有几个复制几个 不要盒子撑破-->
+            <div class="serviceProcessBox">
+                <!-- 最左边的数字 -->
+                <div class="serviceProcessBox-number">1</div>
+                <!-- 然后是名称 -->
+                <div class="serviceProcessBox-name">客户需求</div>
+                <!-- 有一条分隔线 -->
+                <div class="serviceProcessBox-line"></div>
+                <!-- 然后是内容 -->
+                <div class="serviceProcessBox-content">
+                    <!-- 分两行 -->
+                    <div class="serviceProcessBox-content-top">接听来电&ensp;&ensp;记录信息</div>
+                    <div class="serviceProcessBox-content-bottom">初步沟通&ensp;&ensp;了解需求</div>
+                </div>
+                <!-- 所需的时间 -->
+                <div class="serviceProcessBox-content-time">
+                    <div class="serviceProcessBox-content-time-left">1</div>
+                    <div class="serviceProcessBox-content-time-right">工作日</div>
+                </div>
+            </div>
+            <div class="serviceProcessBox">
+                <!-- 最左边的数字 -->
+                <div class="serviceProcessBox-number">2</div>
+                <!-- 然后是名称 -->
+                <div class="serviceProcessBox-name">客户需求</div>
+                <!-- 有一条分隔线 -->
+                <div class="serviceProcessBox-line"></div>
+                <!-- 然后是内容 -->
+                <div class="serviceProcessBox-content">
+                    <!-- 分两行 -->
+                    <div class="serviceProcessBox-content-top">接听来电&ensp;&ensp;记录信息</div>
+                    <div class="serviceProcessBox-content-bottom">初步沟通&ensp;&ensp;了解需求</div>
+                </div>
+                <!-- 所需的时间 -->
+                <div class="serviceProcessBox-content-time">
+                    <div class="serviceProcessBox-content-time-left">1</div>
+                    <div class="serviceProcessBox-content-time-right">工作日</div>
+                </div>
+            </div>
+            <div class="serviceProcessBox">
+                <!-- 最左边的数字 -->
+                <div class="serviceProcessBox-number">3</div>
+                <!-- 然后是名称 -->
+                <div class="serviceProcessBox-name">客户需求</div>
+                <!-- 有一条分隔线 -->
+                <div class="serviceProcessBox-line"></div>
+                <!-- 然后是内容 -->
+                <div class="serviceProcessBox-content">
+                    <!-- 分两行 -->
+                    <div class="serviceProcessBox-content-top">接听来电&ensp;&ensp;记录信息</div>
+                    <div class="serviceProcessBox-content-bottom">初步沟通&ensp;&ensp;了解需求</div>
+                </div>
+                <!-- 所需的时间 -->
+                <div class="serviceProcessBox-content-time">
+                    <div class="serviceProcessBox-content-time-left">1</div>
+                    <div class="serviceProcessBox-content-time-right">工作日</div>
+                </div>
+            </div>
+            <div class="serviceProcessBox">
+                <!-- 最左边的数字 -->
+                <div class="serviceProcessBox-number">4</div>
+                <!-- 然后是名称 -->
+                <div class="serviceProcessBox-name">客户需求</div>
+                <!-- 有一条分隔线 -->
+                <div class="serviceProcessBox-line"></div>
+                <!-- 然后是内容 -->
+                <div class="serviceProcessBox-content">
+                    <!-- 分两行 -->
+                    <div class="serviceProcessBox-content-top">接听来电&ensp;&ensp;记录信息</div>
+                    <div class="serviceProcessBox-content-bottom">初步沟通&ensp;&ensp;了解需求</div>
+                </div>
+                <!-- 所需的时间 -->
+                <div class="serviceProcessBox-content-time">
+                    <div class="serviceProcessBox-content-time-left">1</div>
+                    <div class="serviceProcessBox-content-time-right">工作日</div>
+                </div>
+            </div>
+            <div class="serviceProcessBox">
+                <!-- 最左边的数字 -->
+                <div class="serviceProcessBox-number">5</div>
+                <!-- 然后是名称 -->
+                <div class="serviceProcessBox-name">客户需求</div>
+                <!-- 有一条分隔线 -->
+                <div class="serviceProcessBox-line"></div>
+                <!-- 然后是内容 -->
+                <div class="serviceProcessBox-content">
+                    <!-- 分两行 -->
+                    <div class="serviceProcessBox-content-top">接听来电&ensp;&ensp;记录信息</div>
+                    <div class="serviceProcessBox-content-bottom">初步沟通&ensp;&ensp;了解需求</div>
+                </div>
+                <!-- 所需的时间 -->
+                <div class="serviceProcessBox-content-time">
+                    <div class="serviceProcessBox-content-time-left">1</div>
+                    <div class="serviceProcessBox-content-time-right">工作日</div>
+                </div>
+            </div>
+            <div class="serviceProcessBox">
+                <!-- 最左边的数字 -->
+                <div class="serviceProcessBox-number">6</div>
+                <!-- 然后是名称 -->
+                <div class="serviceProcessBox-name">客户需求</div>
+                <!-- 有一条分隔线 -->
+                <div class="serviceProcessBox-line"></div>
+                <!-- 然后是内容 -->
+                <div class="serviceProcessBox-content">
+                    <!-- 分两行 -->
+                    <div class="serviceProcessBox-content-top">接听来电&ensp;&ensp;记录信息</div>
+                    <div class="serviceProcessBox-content-bottom">初步沟通&ensp;&ensp;了解需求</div>
+                </div>
+                <!-- 所需的时间 -->
+                <div class="serviceProcessBox-content-time">
+                    <div class="serviceProcessBox-content-time-left">1</div>
+                    <div class="serviceProcessBox-content-time-right">工作日</div>
+                </div>
+            </div>
+            <div class="serviceProcessBox">
+                <!-- 最左边的数字 -->
+                <div class="serviceProcessBox-number">7</div>
+                <!-- 然后是名称 -->
+                <div class="serviceProcessBox-name">客户需求</div>
+                <!-- 有一条分隔线 -->
+                <div class="serviceProcessBox-line"></div>
+                <!-- 然后是内容 -->
+                <div class="serviceProcessBox-content">
+                    <!-- 分两行 -->
+                    <div class="serviceProcessBox-content-top">接听来电&ensp;&ensp;记录信息</div>
+                    <div class="serviceProcessBox-content-bottom">初步沟通&ensp;&ensp;了解需求</div>
+                </div>
+                <!-- 所需的时间 -->
+                <div class="serviceProcessBox-content-time">
+                    <div class="serviceProcessBox-content-time-left">1</div>
+                    <div class="serviceProcessBox-content-time-right">工作日</div>
+                </div>
+            </div>
+            <div class="serviceProcessBox">
+                <!-- 最左边的数字 -->
+                <div class="serviceProcessBox-number">8</div>
+                <!-- 然后是名称 -->
+                <div class="serviceProcessBox-name">客户需求</div>
+                <!-- 有一条分隔线 -->
+                <div class="serviceProcessBox-line"></div>
+                <!-- 然后是内容 -->
+                <div class="serviceProcessBox-content">
+                    <!-- 分两行 -->
+                    <div class="serviceProcessBox-content-top">接听来电&ensp;&ensp;记录信息</div>
+                    <div class="serviceProcessBox-content-bottom">初步沟通&ensp;&ensp;了解需求</div>
+                </div>
+                <!-- 所需的时间 -->
+                <div class="serviceProcessBox-content-time">
+                    <div class="serviceProcessBox-content-time-left">1</div>
+                    <div class="serviceProcessBox-content-time-right">工作日</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 最下边黑色的 -->
+    <div class="homePageFooter">
+        <div class="homePageFooter-top">
+            <div class="homePageFooter-top-left">
+                <img src="../static/QRCode.png" alt="" srcset="">
+                项目经理微信
+            </div>
+            <div class="homePageFooter-top-center">
+                <div class="companyName">
+                    深圳市大航海数字影像有限公司
+                </div>
+                <span>
+                    地址：深圳市龙岗区平吉大道9号华熠大厦A栋712号
+                </span>
+                <span>分部：南山区南光路13号中兴工业城8栋401号</span>
+                <span>邮箱：pyj@0755dhh.com</span>
+                <span>电话：400-1088-775</span>
+                <div class="projectManagerPhoneNum">18620382550 项目经理</div>
+            </div>
+            <div class="homePageFooter-top-right">
+                <div class="homePageFooter-top-right-tittle">
+                    <div class="movieShow">
+                        影片鉴赏
+                    </div>
+                </div>
+                <div class="homePageFooter-top-right-content">
+                    <div class="homePageFooter-top-right-content-left">
+                        <a href="#">企业宣传片</a>
+                        <a href="#">产品视频</a>
+                        <a href="#">地产动画</a>
+                    </div>
+                    <div class="homePageFooter-top-right-content-right">
+                        <a href="#">三维动画</a>
+                        <a href="#">Flash动画</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="homePageFooter-bottom">
+            <div class="homePageFooter-bottom-child">
+                <div class="homePageFooter-bottom-child-top">
+                    ©深圳市大航海数字影像有限公司 版权所有
+                </div>
+                <div class="homePageFooter-bottom-child-bottom">
+                    粤ICP备20063353号
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+	$(window).scroll(function() {
+		console.log($(window).scrollTop());
+		//标准服务流程，从中间向两边展开特效
+			if ($(window).scrollTop() > 1700) {
+				$('.serviceProcessBox').eq(0).css({
+					width:'900px',
+					height:'100px',
+					opacity:'1'
+				})
+			}
+		
+	});
+	$(window).scroll(function() {
+		console.log($(window).scrollTop());
+		//标准服务流程，从中间向两边展开特效
+			if ($(window).scrollTop() > 1850) {
+				$('.serviceProcessBox').eq(1).css({
+					width:'900px',
+					height:'100px',
+					opacity:'1'
+				})
+			}
+		
+	});
+	$(window).scroll(function() {
+		console.log($(window).scrollTop());
+		//标准服务流程，从中间向两边展开特效
+			if ($(window).scrollTop() > 2000) {
+				$('.serviceProcessBox').eq(2).css({
+					width:'900px',
+					height:'100px',
+					opacity:'1'
+				})
+			}
+		
+	});
+	$(window).scroll(function() {
+		console.log($(window).scrollTop());
+		//标准服务流程，从中间向两边展开特效
+			if ($(window).scrollTop() > 2150) {
+				$('.serviceProcessBox').eq(3).css({
+					width:'900px',
+					height:'100px',
+					opacity:'1'
+				})
+			}
+		
+	});
+	$(window).scroll(function() {
+		console.log($(window).scrollTop());
+		//标准服务流程，从中间向两边展开特效
+			if ($(window).scrollTop() > 2300) {
+				$('.serviceProcessBox').eq(4).css({
+					width:'900px',
+					height:'100px',
+					opacity:'1'
+				})
+			}
+		
+	});
+	$(window).scroll(function() {
+		console.log($(window).scrollTop());
+		//标准服务流程，从中间向两边展开特效
+			if ($(window).scrollTop() > 2500) {
+				$('.serviceProcessBox').eq(5).css({
+					width:'900px',
+					height:'100px',
+					opacity:'1'
+				})
+			}
+		
+	});
+	$(window).scroll(function() {
+		console.log($(window).scrollTop());
+		//标准服务流程，从中间向两边展开特效
+			if ($(window).scrollTop() > 2700) {
+				$('.serviceProcessBox').eq(6).css({
+					width:'900px',
+					height:'100px',
+					opacity:'1'
+				})
+			}
+		
+	});
+	$(window).scroll(function() {
+		console.log($(window).scrollTop());
+		//标准服务流程，从中间向两边展开特效
+			if ($(window).scrollTop() > 2900) {
+				$('.serviceProcessBox').eq(7).css({
+					width:'900px',
+					height:'100px',
+					opacity:'1'
+				})
+			}
+		
+	});
+</script>
+<script>
+	// tab栏
+	// 当前网页的tabBtn默认下划线 color
+	console.log($('.tabList-box').children().eq(0));
+	$('.tabList-box').children().eq(2).css({
+		borderBottom: '1px solid #1e50ae'
+	})
+	$('.tabList-box').children().eq(2).children().css({
+		color: '#1e50ae'
+	})
+</script>
+</html>
